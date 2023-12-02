@@ -1,9 +1,8 @@
 import { useState } from "react";
 
-export default function FirstChallenge() {
+export default function SumFirstLastDigits() {
   const [input, setInput] = useState("");
-  const [result, setResult] = useState([]);
-  const [sum, setSum] = useState(0);
+  const [sum, setSum] = useState("");
 
   const findNumbers = (line) => {
     const numbers = line.match(/\d/g);
@@ -18,7 +17,6 @@ export default function FirstChallenge() {
   const handleSubmit = () => {
     const lines = input.split("\n");
     const calculatedResults = lines.map(findNumbers);
-    setResult(calculatedResults);
 
     const totalSum = calculatedResults.reduce(
       (acc, currentValue) => acc + parseInt(currentValue, 10),
@@ -43,19 +41,11 @@ export default function FirstChallenge() {
             onClick={handleSubmit}
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           >
-            Calc
+            Calc Sum
           </button>
           <h3 className="text-lg font-semibold text-gray-800">
             Total sum: {sum}
           </h3>
-        </div>
-        <div className="mt-4">
-          <h3 className="text-lg font-semibold text-gray-800 mb-2">Results:</h3>
-          {result.map((num, index) => (
-            <div key={index} className="py-1">
-              {num}
-            </div>
-          ))}
         </div>
       </div>
     </div>

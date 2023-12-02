@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function SecondChallenge() {
+export default function CalculateMixedFormatNumbers() {
   const [input, setInput] = useState("");
   const [sum, setSum] = useState(null);
 
@@ -71,7 +71,7 @@ export default function SecondChallenge() {
             onClick={handleCalculate}
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           >
-            Calc
+            Calc Sum
           </button>
           <h3 className="text-lg font-semibold text-gray-800">
             Total Sum: {sum}

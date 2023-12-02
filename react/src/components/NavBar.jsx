@@ -1,28 +1,12 @@
-import { NavLink } from "react-router-dom";
+import NavItem from "./NavItem";
 
 const NavBar = () => {
   return (
     <nav className="bg-gray-800 text-white">
       <ul className="flex p-4">
-        <li className="hover:bg-gray-700 rounded">
-          <NavLink
-            to="/"
-            className="px-3 py-2 rounded hover:text-gray-300"
-            activeClassName="text-blue-500"
-            exact
-          >
-            Home
-          </NavLink>
-        </li>
-        <li className="hover:bg-gray-700 rounded">
-          <NavLink
-            to="/day/1"
-            className="px-3 py-2 rounded hover:text-gray-300"
-            activeClassName="text-blue-500"
-          >
-            Day one
-          </NavLink>
-        </li>
+        <NavItem path="/" text="Home" />
+        <NavItem path="/day/1" text="Day One" />
+        <NavItem path="/day/2" text="Day Two" />
       </ul>
     </nav>
   );
