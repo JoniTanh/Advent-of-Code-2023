@@ -7,6 +7,7 @@ const NavBar = () => {
         <NavItem path="/" text="Home" />
         <NavItem path="/day/1" text="Day One" />
         <NavItem path="/day/2" text="Day Two" />
+        <NavItem path="/day/3" text="Day Three" />
       </ul>
     </nav>
   );
