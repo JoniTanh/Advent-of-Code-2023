@@ -5,6 +5,7 @@ import DayOneChallenges from "./components/dayOne/DayOneChallenges";
 import DayTwoChallenges from "./components/dayTwo/DayTwoChallenges";
 import DayThreeChallenges from "./components/dayThree/DayThreeChallenges";
 import DayFourChallenges from "./components/dayFour/DayFourChallenges";
+import DayFiveChallenges from "./components/dayFive/DayFiveChallenges";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/day/2" element={<DayTwoChallenges />} />
         <Route path="/day/3" element={<DayThreeChallenges />} />
         <Route path="/day/4" element={<DayFourChallenges />} />
+        <Route path="/day/5" element={<DayFiveChallenges />} />
       </Routes>
     </Router>
   );

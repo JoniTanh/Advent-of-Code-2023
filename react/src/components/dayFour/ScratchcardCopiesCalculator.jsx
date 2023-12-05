@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const ScratchcardCopiesCalculator = () => {
+export default function ScratchcardCopiesCalculator() {
   const [input, setInput] = useState("");
   const [sum, setSum] = useState("");
 
@@ -70,6 +70,4 @@ const ScratchcardCopiesCalculator = () => {
       </div>
     </div>
   );
-};
-
-export default ScratchcardCopiesCalculator;
+}

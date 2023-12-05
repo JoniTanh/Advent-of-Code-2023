@@ -9,6 +9,7 @@ const NavBar = () => {
         <NavItem path="/day/2" text="Day Two" />
         <NavItem path="/day/3" text="Day Three" />
         <NavItem path="/day/4" text="Day Four" />
+        <NavItem path="/day/5" text="Day Five" />
       </ul>
     </nav>
   );
